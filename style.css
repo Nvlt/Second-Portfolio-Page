@@ -1,0 +1,241 @@
+/*Body*/
+body
+{
+    background-image: url("/images/Background-tile.jpg");
+    display:flex;
+    flex-direction: column;
+    opacity: 0.92;
+}
+
+/*Start Header*/
+header
+{
+    background-color: rgb(70, 45, 88);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    align-items: center;
+    
+}
+header h1
+{
+    color:rgb(241, 224, 255);
+    text-align: center;
+    
+    margin-bottom: 0;
+    
+}
+#profile-container
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(76, 50, 100);
+    padding:10px;
+    border-radius: 10px;
+}
+#display-container
+{
+    width: 100px;
+    height:100px;
+    background-color: black;
+    border: black solid 2px;
+    border-radius: 100px;
+    overflow: hidden;
+    
+    
+}
+#display-container img
+{
+    width:inherit;
+    height:inherit;
+
+    
+
+}
+#head-nav ul
+{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    
+}
+#head-nav ul a
+{
+    text-decoration: none;
+    color:rgb(241, 224, 255);
+    padding: 5px;
+    background-color: rgb(76, 50, 100);
+    border-radius: 5px;
+}
+/*End Header*/
+/*Start Main*/
+main
+{
+    background-color: rgb(224, 192, 250);
+    padding:20px;
+    max-width: 700px;
+    
+}
+/*groups and items*/
+.group
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.group .item
+{
+    padding: 50px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    width:fit-content;
+    height:fit-content;
+    background-color: rgb(235, 219, 241);
+
+}
+
+/*Portfolio projects*/
+#portfolio
+{
+    background-color: rgb(229, 198, 245);
+    border-radius: 10px;
+    padding:20px;
+}
+.project-thumb
+{
+    width: 100%;
+    border-radius: 20px;
+}
+#portfolio h2
+{
+    margin-left: 10%;
+    margin-top: 20px;
+    font-size: 30px;
+}
+/*headers*/
+h1,h2,h3,h4
+{
+    margin-top: 0px;
+}
+/*contact*/
+#contact
+{
+    background-color: rgb(229, 198, 245);
+    border-radius: 10px;
+    padding:20px;
+}
+#contact h2
+{
+    margin-left: 10%;
+    margin-top: 20px;
+    font-size: 30px;
+}
+#contact-form
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+#contact-form button
+{
+    width:fit-content;
+}
+#contact-form textarea
+{
+    height:100px;
+}
+/*footer*/
+footer
+{
+    background-color: rgb(76, 50, 100);
+}
+footer h4
+{
+    text-align: center;
+    margin:10px;
+    color:rgb(241, 224, 255);
+}
+
+/*For larger screens*/
+@media all and (min-width:800px)
+{
+    /*main*/
+    main
+    {
+        margin: auto;
+    }
+    /*Wide Screen Header*/
+    header
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;    
+    }
+    #profile-container
+    {
+        display: flex;
+        flex-direction: row;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        padding-right: 50px;
+        padding-left: 20px;
+    }
+    #profile-container h1
+    {
+        margin-bottom: 0px;
+        margin-top:0px;
+        margin-left: 10px;
+        
+    }
+    #display-container
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    #head-nav ul
+    {
+        margin-right: 50px;
+        margin-bottom: 25px;
+        
+    }
+    
+    #head-nav ul a
+    {
+        font-size: 20px;
+        padding: 20px
+    }
+    /*Wide Screen Header end*/
+    /*Nav button Hover effect*/
+    #head-nav ul a:hover
+    {
+        background-color: rgb(90, 60, 117);
+    }
+
+    /*Responsive external hyperlinks*/
+    .btn:link{color:rgb(184, 122, 255);}
+    .btn:hover{color:rgb(245, 156, 215);}
+    .btn:active{color:rgb(243, 83, 235);}
+    .btn:visited{color:rgb(95, 65, 129);}
+    /*groups and items*/
+    .group
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .group .item
+    {
+        margin:5px;
+    }
+    /*Portfolio projects*/
+    .project-thumb
+    {
+        width: 200px;
+    }
+}
+/*End of css for larger screens*/
